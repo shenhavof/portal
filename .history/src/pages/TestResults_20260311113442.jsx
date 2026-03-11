@@ -187,7 +187,7 @@ export default function TestResults() {
       <div className="page-header">
         <h2>{titleLabel}</h2>
 {/* ⭐ כפתור חזרה למחזור האחרון – להישאר בדף בלי ניווט */}
-        <div className="results-back-wrap">
+        <div style={{ textAlign: "center", marginTop: "10px" }}>
           <BackToCurrentCycle />
         </div>
 

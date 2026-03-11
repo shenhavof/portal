@@ -131,8 +131,6 @@
 
 .results-page .segmented {
   margin-top: 0;
-  border-radius: 10px !important; /* מרובע (לא גלולה) */
-  overflow: hidden; /* שומר שהסגול הפעיל יישב יפה בתוך המסגרת */
 }
 
 .segmented {

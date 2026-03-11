@@ -1,10 +1,10 @@
 // src/pages/TestResults.jsx 
 import React, { useMemo, useState } from "react";
 import { formatHeYMD } from "../utils/date";
+import "../styles/global.css";
 import "../styles/TestResults.css";
 import { useCycle } from "../context/CycleContext";
 import { useTranslation } from "react-i18next";
-import "../styles/global.css";
 import BackToCurrentCycle from "../components/BackToCurrentCycle";
 
 /** SVG מינימלי לאולטרסאונד */
@@ -187,7 +187,7 @@ export default function TestResults() {
       <div className="page-header">
         <h2>{titleLabel}</h2>
 {/* ⭐ כפתור חזרה למחזור האחרון – להישאר בדף בלי ניווט */}
-        <div className="results-back-wrap">
+        <div style={{ textAlign: "center", marginTop: "10px" }}>
           <BackToCurrentCycle />
         </div>
 

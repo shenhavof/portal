@@ -37,7 +37,7 @@ export default function LanguageSelector({ compact = false }) {
               {t("chooseLanguage")}
             </div>
             <div className="lang-modal-options">
-              {languages.map((l) => (
+        {languages.map((l) => (
                 <button
                   key={l.code}
                   type="button"
@@ -50,9 +50,9 @@ export default function LanguageSelector({ compact = false }) {
                     setOpen(false);
                   }}
                 >
-                  {l.name}
+            {l.name}
                 </button>
-              ))}
+        ))}
             </div>
           </div>
         </div>

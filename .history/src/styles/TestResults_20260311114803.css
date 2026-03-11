@@ -131,8 +131,6 @@
 
 .results-page .segmented {
   margin-top: 0;
-  border-radius: 10px !important; /* מרובע (לא גלולה) */
-  overflow: hidden; /* שומר שהסגול הפעיל יישב יפה בתוך המסגרת */
 }
 
 .segmented {
@@ -356,27 +354,6 @@
   .mini-head,
   .mini-val {
     font-size: 0.75rem;
-  }
-}
-
-/* 713px ומעלה: הסרגל צריך להיות גדול ומאוורר יותר בדסקטופ/טאבלט (בלי להגדיל אייקונים) */
-@media (min-width: 713px) {
-  .results-page .segmented {
-    padding: 8px;               /* מגדיל את "הגלולה" */
-    gap: 10px;
-    min-height: 52px;
-    min-width: 320px;
-    max-width: 420px;
-    width: min(420px, 100%);
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .results-page .seg-btn {
-    padding: 0.85rem 1.45rem;   /* יותר מרווח סביב האייקון */
-    min-width: 92px;
-    min-height: 42px;
-    justify-content: center;
   }
 }
 

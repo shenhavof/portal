@@ -170,7 +170,7 @@ export default function TestResults() {
       label: bothLabel,
       icon: (
         <span className="seg-both" aria-hidden="true">
-          <span className="seg-both-part">💉</span>
+          <span className="seg-both-part">🧪</span>
           <span className="seg-both-plus">+</span>
           <span className="seg-both-part">
             <UltrasoundIcon />
@@ -178,7 +178,7 @@ export default function TestResults() {
         </span>
       ),
     },
-    { key: "blood", label: bloodLabel, icon: <span aria-hidden="true">💉</span> },
+    { key: "blood", label: bloodLabel, icon: <span aria-hidden="true">🧪</span> },
     { key: "ultrasound", label: ultraLabel, icon: <UltrasoundIcon /> },
   ];
 
@@ -187,7 +187,7 @@ export default function TestResults() {
       <div className="page-header">
         <h2>{titleLabel}</h2>
 {/* ⭐ כפתור חזרה למחזור האחרון – להישאר בדף בלי ניווט */}
-        <div className="results-back-wrap">
+        <div style={{ textAlign: "center", marginTop: "10px" }}>
           <BackToCurrentCycle />
         </div>
 
